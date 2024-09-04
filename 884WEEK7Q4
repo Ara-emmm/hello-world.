@@ -1,0 +1,45 @@
+<?xml version="1.0" studentlone='yes'?>
+<!DOCTYPE StudentRecord [
+    <!ELEMENT StudentRecord (firstName, lastName, studentId, subjectList)>
+    <!ELEMENT firstName(#PCDATA)>
+    <!ELEMENT lastName(#PCDATA)>
+    <!ELEMENT StudentID(#PCDATA)>
+    <!ELEMENT Subjects (Subject*)>
+    <!ELEMENT Subject (Code, CreditPoint, Mark, Grade)>
+    <!ELEMENT Code (#PCDATA)>
+    <!ELEMENT CreditPoints (#PCDATA)>
+    <!ELEMENT Mark (#PCDATA)>
+    <!ELEMENT Grade (#PCDATA)>
+]>
+<StudentRecord>
+    <Student>
+        <Name>SMITH, John</Name>
+        <StudentID>1231234</StudentID>
+        <Subjects>
+            <Subject>
+                <Code>MATH101</Code>
+                <CreditPoint>4</CreditPoint>
+                <Mark>85</Mark>
+                <Grade>A</Grade>
+            </Subject>
+            <Subject>
+                <Code>ECON111</Code>
+                <CreditPoint>5</CreditPoint>
+                <Mark>70</Mark>
+                <Grade>B</Grade>
+            </Subject>
+            <Subject>
+                <Code>CS100</Code>
+                <CreditPoint>5</CreditPoint>
+                <Mark>80</Mark>
+                <Grade>A</Grade>
+            </Subject>
+            <Subject>
+                <Code>LAW121</Code>
+                <CreditPoint>6</CreditPoint>
+                <Mark>75</Mark>
+                <Grade>B</Grade>
+            </Subject>
+        </Subjects>
+    </Student>
+</StudentRecord>
